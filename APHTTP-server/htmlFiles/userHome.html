@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { 
+    background: url("/user_bg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.button {
+    position: absolute;
+    right: 10px;
+    line-height: 20%;
+    background-color: #d2ff4d;
+    border: none;
+    color: white;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 35px;
+    width: 150px;
+    border-style: solid;
+    border-color: #d2ff4d;
+}
+
+.button1 {
+    background-color: #d2ff4d; 
+    color: black; 
+    border: none;
+}
+
+.button1:hover {
+    background-color: #e6ff99;
+    color: white;
+}
+#h1 {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    height: 120px;
+}
+#jeekjeek{
+    text-shadow: 2px 2px 5px #bbff33;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+#h2 {
+    position:absolute;
+    margin: auto;
+    text-align: center;
+    height: 120px;
+    width: 100%;
+}
+#search{
+    position: relative;
+    margin: auto;
+    height: 30%;
+}
+#searchInput{
+    font-size: 100%;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    display: table-cell;
+    border-style: groove;
+    border-color: darkgreen;
+    border-radius: 15px;
+}
+#result{
+    position: relative;
+    width: 800px;
+    margin: auto;
+}
+#searchIcon{
+    position:absolute;
+    right:5px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+}
+#jeek{
+    background: white;
+    position: relative;
+    margin: auto;
+    width: 800px;
+    border-style: outset;
+    border-color: darkgreen;
+    height: 110px;
+}
+#jeekText{
+    position: absolute;
+    left: 10px;
+    height: 110px;
+    width: 600px;
+    border-style: none;
+    border-color: olive;
+    border-radius: 15px;
+}
+</style>
+</head>
+<body>
+    <div id="h1" style="color: darkgreen;">
+        <div id="jeekjeek">
+            <img src = "/logo" alt="JeekJeek" style = " width: 35% ; height: 35%">
+        </div>
+        <div id="h2" style="color:darkgreen; text-align:center">
+            <p style="font-size: 300%;">Hi $ <br></p>    
+            <form action="/logout" method="get" >
+                <button class="button button1" name="logout" type="hidden" style=" font-size: 130%; top:35px;">
+                    LOGOUT
+                </button>
+            </form>
+            <form action="/add_jeek" method="get" >
+                <button class="button button1" name="add jeek" type="hidden" style=" font-size: 130%;top:80px;">
+                    ADD JEEK
+                </button>
+            </form>
+        </div>
+    </div>
+    <p style="text-align:center ; color:#394d00; font-size: 150%;">
+        Easily search by hashtags or username and find all related Jeeks!
+    </p>
+    <div id="search" style="width: 50%;">
+        <form id="search" action="/search_page" method="post" style="text-align:center;">
+            <input type="text" id="searchInput" name="searchText" placeholder="Search here..." size="25">
+            <div id="searchIcon">
+                <input type="image" src="/search_icon" alt="Submit" style="width:80%;height:80%;">
+            </div>
+            <div id="result">
+                <h4 style=" color:#334d00; font-size: 120%; text-align:left;"> RESULTS: </h4>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

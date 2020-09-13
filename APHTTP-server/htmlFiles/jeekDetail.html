@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html { 
+    background: url("/jeek_detail_bg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.alert {
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+a.one:link {
+    text-decoration: none;
+    color: green;
+
+}
+a.one:visited {
+    text-decoration: none;
+    color: green;
+}
+a.one:hover {
+    text-decoration: underline;
+    color: darkgreen;
+}
+a.one:active {
+    text-decoration: underline;
+    color:  darkgreen;
+}
+#h1 {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    height: 120px;
+}
+#jeekjeek{
+    text-shadow: 2px 2px 5px #bbff33;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+#h2 {
+    position:absolute;
+    margin: auto;
+    text-align: center;
+    height: 120px;
+    width: 100%;
+}
+#h3 {
+    position: relative;
+    background: white; 
+    margin: auto;
+    border-style: groove;
+    border-color: amber;
+    width: 70% ;
+    height: 300px;
+}
+#details{
+    position: relative;
+    width: 800px;
+    margin: auto;
+}
+#backHome{
+    position: absolute;
+    background: #e6ff99;
+    border-style: solid;
+    border-color: #d2ff4d;
+    border-radius: 15px;
+    line-height: 20%;
+    text-align:center;
+    vertical-align: middle;
+}
+#jeek{
+    position: absolute;
+    top:0px;
+    left: 5px;
+    height: 170px;
+    width: 85%;
+}
+#username{
+    position: absolute;
+    top: 10px;
+    height: 40px;
+    width:30%;
+    left: 5px;
+    background: #e4ff99;
+    border-radius: 15px;
+    text-align:center;
+    vertical-align: middle;
+}
+#static{
+    left: 5px;
+    position: absolute;
+    height: 65px;
+    width: 85%;
+}
+#part{
+    position: absolute;
+    height: 60px;
+    width: 50%;
+    vertical-align: middle;      
+}
+#text{
+    position: absolute;
+    height: 150px;
+    width: 90%;
+    top:50px;
+    left:5px;
+    word-wrap: break-word;
+}
+#line{
+    position: absolute;
+    top: 200px;
+    left:13px;
+    width: 80%;
+    border-style: outset;
+    border-color: #ace600;
+}
+.button {
+    position: absolute;
+    line-height: 20%;
+    background-color: #d9ff66;
+    border: none;
+    color: white;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    border-radius: 10px;
+    top:7px;
+    height: 35px;
+    width: 150px;
+    border-style: solid;
+    border-color: #d9ff66;
+}
+
+.button1 {
+    background-color: #d9ff66; 
+    color: black; 
+    border: none;
+}
+
+.button1:hover {
+    background-color: #e6ff99;
+    color: white;
+}
+</style>
+</head>
+<body>
+    <div id="h1" style="color: darkgreen;">
+        <div id="jeekjeek">
+            <img src = "/logo" alt="JeekJeek" style = " width: 25% ; height: 25%">
+        </div>
+        <div id="h2" style="color:darkgreen; text-align:center">
+            <p style="font-size: 300%;">Hi $ <br></p>    
+            <form action="/logout" method="get" >
+                <button class="button button1" name="logout" type="hidden" style=" font-size: 130%;right: 10px; top: 30px;">
+                    LOGOUT
+                </button>
+            </form>
+        </div>
+    </div>
+    <br><br>
+    <div id="details" style=" color:#334d00; ">
+        <h4 style=" color:#334d00; font-size: 120%; text-align:left;"> DETAILS: </h4>
+    </div> 
+    <div id="h3">
+        <div id="jeek" >
+            <div id="username" style="line-height: 20%; text-align:center;">
+                <p style="color:#446600; font-size: 120%">  @* </p> 
+            </div>
+            <div id="text">
+                <p style="color:#334d00; font-size: 120%;"> TEXT <br> TAGS <br> MTNS </p>
+            </div>
+
+        </div>
+        <div id="line">
+        </div>
+        <div id="static" style="top: 190px; line-height: 25px;">
+            <div id="part" style="left: 5px;">
+                <p style="color: #408000; font-size: 120%"> #Likes: ^ </p>
+            </div>
+            <div id="part" style="left: 50%;">
+                <p style="color: #408000; font-size: 120%"> #Rejeeks: ^ </p>
+            </div>
+        </div>
+    <div id="static" style="top: 235px;">
+            <div id="part" style="left: 35px; line-height: 70px;">
+                <form action="/like" method="get">
+                    <input type="image" name="jeekId" src="+" alt="Submit" style=" width:25px; height:25px;" value="+">
+                </form>
+            </div>
+        <div id="part" style="left: 75px; line-height: 60px;">
+            <form action="/rejeek" method="get" >
+                <button class="button button1" name="jeekId_" type="hidden" value="+" >
+                    REJEEK
+                </button>
+            </form>
+        </div>
+    </div>
+    <form action="/back_user_home" method="get" >
+        <button class="button button1" name="back" type="hidden" style="right:10px;">
+            BACK
+        </button>
+    </form>
+    </div>
+

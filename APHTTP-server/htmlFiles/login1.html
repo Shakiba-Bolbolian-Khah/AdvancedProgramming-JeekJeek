@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html { 
+    background: url("/login_bg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.alert {
+    padding: 20px;
+    background-color: #cfff4d;
+    border-radius: 10px;
+    color: white;
+    width: 35%;
+    margin: auto;
+    top:400px;
+}
+.closebtn {
+    margin-left: 15px;
+    color: #5e8000;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: white;
+}
+.button {
+    background-color: #d5ff80;
+    border: none;
+    color: white;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button1 {
+    background-color: #99cc00; 
+    color: black; 
+    border: none;
+}
+
+.button1:hover {
+    background-color: #ddff99;
+    color: white;
+}
+#all{
+    margin: auto;
+    position: relative;
+    height: 350px;
+    width: 100%;
+    vertical-align: middle;  
+}
+#part{
+    margin: auto;
+    position: absolute;
+    right: 0px;
+    height: 100px;
+    width: 100%;
+}
+#textInput{
+    font-size: 100%;
+    outline: none;
+    margin: auto;
+    width: 35%;
+    height: 35px;
+    display: table-cell;
+    border-style: groove;
+    border-color: darkgreen;
+    border-radius: 15px;
+}
+#page{
+    position: absolute;
+    line-height: 20%;
+    text-align:center;
+    vertical-align: middle;
+}
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+    <div id="all" style="text-align: center;">
+        <form action="/user_home" method="post">
+            <div id="part" style="top:50px;">
+                <p class="sansserif" style="font-size: 250%;  text-shadow: 3px 2px green; font-style: bold;">LOGIN</p>
+                <input id="textInput" name="username" type="text" placeholder="Username" required />
+                <br><br>
+                <input id="textInput" name="password" type="password" placeholder="Password" required />
+                <br><br>
+                <button class="button button1" name="login" type="submit" style="color: #4b6600; font-size: 120%;">
+                    LOGIN
+                </button>
+            </div>
+        </form>
+    </div>
+    <a id="page" href="/signup_page" style=" color:green; text-decoration:none; height: 45px; width:120px; left: 10px; bottom: 10px; line-height: 24px; font-family: Arial, Helvetica, sans-serif; font-size: 80%; background: #e6ff99;border-style: solid;border-color: #d2ff4d;border-radius: 15px;">
+            New to JeekJeek? Create an account!
+    </a>
+    <div style="position: absolute; height: 60px; width: 5%; right: 5px; bottom: 10px;">
+        <form id="page" action="/menu" method="post" style="text-align:center;">
+                <input type="image" src="/home_icon" alt="Submit" style="width:100%;bottom:10px;right:0px;">
+        </form>
+    </div>

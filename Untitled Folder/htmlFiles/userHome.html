@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a.one:link {
+    text-decoration: none;
+    color: green;
+
+}
+a.one:visited {
+    text-decoration: none;
+    color: green;
+}
+a.one:hover {
+    text-decoration: underline;
+    color: darkgreen;
+}
+a.one:active {
+    text-decoration: underline;
+    color:  darkgreen;
+}
+#h1 {
+    background: white;
+    margin: auto;
+    width: 80%;
+    position: relative;
+    border-style: outset;
+    border-color: amber;
+    left: 0px;
+    top: 0px;
+    right: 20px;
+    height: 120px;
+}
+#jeekjeek{
+    text-shadow: 2px 2px 5px #bbff33;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+
+}
+#h2 {
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    right: 20px;
+    height: 120px;
+}
+#search{
+    position: relative;
+    margin: auto;
+    width: 600px;
+    height: 30px;
+}
+#searchInput{
+    font-size: 100%;
+    outline: none;
+    width: 600px;
+    height: 30px;
+    display: table-cell;
+    border-style: groove;
+    border-color: darkgreen;
+    border-radius: 15px;
+}
+#result{
+    position: relative;
+    width: 800px;
+    margin: auto;
+}
+#searchIcon{
+    position:absolute;
+    right:5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+#jeek{
+    background: white;
+    position: relative;
+    margin: auto;
+    width: 800px;
+    border-style: outset;
+    border-color: darkgreen;
+    height: 110px;
+}
+#jeekText{
+    position: absolute;
+    left: 10px;
+    height: 110px;
+    width: 600px;
+    border-style: noborder;
+    border-color: olive;
+    border-radius: 15px;
+}
+#detailBotton{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    height: 35px;
+    background: #d2ff4d;
+    width:180px;
+    border-style: solid;
+    border-color: #d2ff4d;
+    border-radius: 15px;
+    line-height: 20%;
+    text-align:center;
+    }
+
+
+
+</style>
+</head>
+<body style="background: #dfff80;">
+<div id="h1" style="color: darkgreen;">
+    <div id="jeekjeek">
+        <!-- <h1>JeekJeek</h1> -->
+        <img src="logo.png" style="width:15%; height: 15%">
+    </div>
+    <div id="h2" style="color:darkgreen; text-align:center">
+        <h3>Hi $ <br></h3>    
+        <a class="one" href="/logout" style=" font-size:120%;">Logout</a>
+    </div>
+</div>
+<p style="text-align:center ; color:#394d00;">
+    Easily search by hashtags or username and find all related Jeeks!
+</p>
+<form id="search" action="/search_page" method="post" style="text-align:center;">
+    <input type="text" id="searchInput" name="searchText" placeholder="Search here..." size="25">
+    <div id="searchIcon">
+        <input type="image" src="/search_icon" alt="Submit" style="width:20px;height:20px;border:0">
+    </div>
+</form>
+
+<br>
+<div id="result">
+    <h4 style=" color:#334d00; "> Results: </h4>
+</div>

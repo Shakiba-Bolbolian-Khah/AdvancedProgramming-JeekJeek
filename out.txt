@@ -1,0 +1,32 @@
+This username was chosen before!
+You've logged in before!
+b
+hello friend
+#aa
+#bb
+@a
+@b
+@c
+Likes 0
+Rejeeks 0
+comments:
+Text has more than 140 characters!
+Message not found!
+Command entered with wrong number of arguments!
+b
+hello friend
+#aa
+#bb
+@a
+@b
+@c
+Likes 0
+Rejeeks 0
+comments:
+Message not found!
+b
+sdgfxdg
+@s
+Likes 0
+Rejeeks 0
+comments:
